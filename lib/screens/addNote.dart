@@ -52,7 +52,7 @@ class _AddNoteState extends State<AddNote> {
       body: GestureDetector(
         onTap: () => FocusScope.of(context).unfocus(),
         child: Padding(
-          padding: EdgeInsetsDirectional.symmetric(horizontal: 20),
+          padding: EdgeInsetsDirectional.symmetric(horizontal: 20.w),
           child: ListView(
             children: [
               Form(
@@ -65,7 +65,7 @@ class _AddNoteState extends State<AddNote> {
                       style: GoogleFonts.aBeeZee(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
-                          fontSize: 25),
+                          fontSize: 25.sp),
                     ),
                     SizedBox(height: 20.h),
                     TextFormField(
@@ -91,7 +91,7 @@ class _AddNoteState extends State<AddNote> {
                     ),
                     SizedBox(height: 20.h),
                     SizedBox(
-                      height: 60,
+                      height: 60.h,
                       child: DropdownButtonFormField(
                         items: _priorities.map((label) => DropdownMenuItem(
                           child: Text(label.toString(),style: GoogleFonts.aBeeZee(color: Colors.black)),
@@ -108,7 +108,7 @@ class _AddNoteState extends State<AddNote> {
                           decoration: InputDecoration(
                             labelText: "Priority",
                             floatingLabelBehavior:FloatingLabelBehavior.always ,
-                            floatingLabelStyle: TextStyle(fontSize: 15,),
+                            floatingLabelStyle: TextStyle(fontSize: 15.sp,),
                             floatingLabelAlignment: FloatingLabelAlignment.start,
                             labelStyle: TextStyle(fontSize: 18.sp),
                             border: OutlineInputBorder(

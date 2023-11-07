@@ -61,7 +61,7 @@ class _EditNoteState extends State<EditNote> {
       body: GestureDetector(
         onTap: () => FocusScope.of(context).unfocus(),
         child: Padding(
-          padding: const EdgeInsetsDirectional.symmetric(horizontal: 20),
+          padding:  EdgeInsetsDirectional.symmetric(horizontal: 20.w),
           child: ListView(
             children: [
               Form(
@@ -74,7 +74,7 @@ class _EditNoteState extends State<EditNote> {
                       style: GoogleFonts.aBeeZee(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
-                          fontSize: 25),
+                          fontSize: 25.sp),
                     ),
                     SizedBox(height: 20.h),
                     TextFormField(
@@ -98,7 +98,7 @@ class _EditNoteState extends State<EditNote> {
                     ),
                     SizedBox(height: 20.h),
                     SizedBox(
-                      height: 60,
+                      height: 60.h,
                       child: DropdownButtonFormField(
                         items: _priorities.map((label) => DropdownMenuItem(
                           child: Text(label.toString(),style: GoogleFonts.aBeeZee(color: Colors.black)),

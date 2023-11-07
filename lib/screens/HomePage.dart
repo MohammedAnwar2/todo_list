@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                 },
               ):Padding(
               padding:  EdgeInsets.only(top: MediaQuery.of(context).size.height/3),
-              child: Center(child: Text("There is no tasks",style: GoogleFonts.aBeeZee(fontSize: 20)),),
+              child: Center(child: Text("There is no tasks",style: GoogleFonts.aBeeZee(fontSize: 20.sp)),),
               );
             })
           ],
